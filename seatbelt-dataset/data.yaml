@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ["number plate", "no-seatbelt", "Seatbelt"]
+
+roboflow:
+  workspace: simonkidi
+  project: simonkidi
+  version: 12
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/simonkidi/simonkidi/dataset/12
