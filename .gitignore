@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+*.pyd
+*.dll
+*.lib
+*.so
+*.zip
+*.tar.gz
+.DS_Store
+*.log
+.env
