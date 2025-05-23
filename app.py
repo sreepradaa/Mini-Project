@@ -39,7 +39,8 @@ def main():
             st.subheader("Processed Image")
             for frame_base64 in result['frames']:
                 frame = Image.open(BytesIO(base64.b64decode(frame_base64)))
-                st.image(frame, use_column_width=True)
+                # Updated code
+                st.image(frame, caption="Processed Frame", use_container_width=True)
             
             # Display violations
             st.subheader("Violations Detected")
@@ -65,7 +66,7 @@ def main():
             cols = st.columns(3)
             for i, frame_base64 in enumerate(result['frames']):
                 frame = Image.open(BytesIO(base64.b64decode(frame_base64)))
-                cols[i % 3].image(frame, use_column_width=True)
+                cols[i % 3].image(frame, use_container_width=True)
             
             # Display violations
             st.subheader("Violations Detected")
@@ -86,7 +87,7 @@ def main():
             cols = st.columns(3)
             for i, frame_base64 in enumerate(result['frames']):
                 frame = Image.open(BytesIO(base64.b64decode(frame_base64)))
-                cols[i % 3].image(frame, use_column_width=True)
+                cols[i % 3].image(frame, use_container_width=True)
             
             # Display violations
             st.subheader("Violations Detected")
